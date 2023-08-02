@@ -64,6 +64,10 @@ On the first environment deployment, a script will automatically setup the datab
 
 See the `docs` folder.
 
+## Warning
+
+Do not taunt etc.
+
 ## Note
 
 Do not taunt Happy Fun Ball.
