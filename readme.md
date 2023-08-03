@@ -66,7 +66,7 @@ See the `docs` folder.
 
 ## Warning
 
-Do not taunt etc.
+Do not taunt Happy Fun Ball.
 
 ## Note
 
