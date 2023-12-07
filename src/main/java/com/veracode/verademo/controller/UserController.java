@@ -491,8 +491,7 @@ public class UserController {
 			String sqlMyEvents = "select event from users_history where blabber=\"" + username
 					+ "\" ORDER BY eventid DESC; ";
 			logger.info(sqlMyEvents);
-			PreparedStatement sqlStatement = connect.prepareStatement();
-		sqlStatement.setString(1, username);
+			Statement sqlStatement = connect.createStatement();
 			ResultSet userHistoryResult = sqlStatement.executeQuery(sqlMyEvents);
 			/* END BAD CODE */
 
@@ -501,7 +500,7 @@ public class UserController {
 			}
 
 			// Get the users information
-			String sql = "SELECT username, real_name, blab_name FROM users WHERE username = ?";
+			String sql = "SELECT username, real_name, blab_name FROM users WHERE username = '" + username + "'";
 			logger.info(sql);
 			myInfo = connect.prepareStatement(sql);
 			ResultSet myInfoResults = myInfo.executeQuery();
